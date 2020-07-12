@@ -39,8 +39,10 @@ We have to install kubectl command in our redhat vm and then configure the minik
             2. client.key
             3. client.crt
             
-Configuration file:
-<img src="config3.png">
+Configuration file of kuburnetes:
+
+
+<img src="config33.png">
 
 
 # Step:1
@@ -48,7 +50,8 @@ Creating a container image using Dockerfile which has the jenkins installed.
 we installed  required commands for the centos. We have to provde root powers to jenkins to operate  commands. Jenkins default port 
 is 8080.
 
-<img src="dockerfile3.png">
+
+<img src="dockerfile3.png"   >
 
 After creating the image we have to build the image from the dockerfile.
 COMMAND: 
@@ -68,19 +71,33 @@ Creating first Jenkins job which will download the code from the Github.
 Whenever any code is pushed into the github jenkins job 1 will automatically 
 download the code with the git  hook triggers. 
 
-<img src="job1giturl3.png">
 
-Token provided
-<img src="job1token3.png">
+
+<img src="job1giturl3.png" >
+
+
+We provid tokens for the triggers 
+
+
+
+<img src="job1token3.png"  >
+
+
 
 This code will be copied inside the container in the folder provided.
-<img src="copyjob13.png">
+
+
+
+<img src="copyjob13.png" >
 
 
 # Step:3
 
 In the Jenkins Job 2 the code of file from the container will be transfered or copied to RHEL 8 Virtual Machine.
-<img src="job2copyfiles3.png">
+
+
+
+<img src="job2copyfiles3.png" >
 
 
 # Step:4
@@ -95,15 +112,19 @@ Here the pod is launched on the top of Kubernetes which will monitor the pods an
 
 
 This  Jenkins Job will check the  deployed pod for errors. If there is any error in the deployment an email will be sent to the mentioned email account. 
-<img src="copyjob13.png">
+
+
+<img src="copyjob13.png"   >
 
 
 Before doing this we have to configure emails in the Jenkins configuration else email won't work.
-<img src="job4email3.png">
+
+
+<img src="job4email3.png" >
 
 
 
 
-So, we are at the end of the task.
-Thank You for Reading it!!
+# We are at the end of the task.
+# Thank You for Reading it!!
 
