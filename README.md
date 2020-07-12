@@ -76,7 +76,7 @@ download the code with the git  hook triggers.
 <img src="job1giturl3.png" >
 
 
-We provid tokens for the triggers 
+We provide tokens for the triggers 
 
 
 
