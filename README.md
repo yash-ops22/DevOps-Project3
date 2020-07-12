@@ -60,8 +60,7 @@ Then running the container image with the command
          docker run -it -p 8181:8080 --name osjenkins  yashu:v1
          
 
-After running the image we have to start the jenkins service with its default port
-localhost:8080
+After running the image we can start the jenkins service.
 
 # Step:2
 
@@ -69,19 +68,19 @@ Creating first Jenkins job which will download the code from the Github.
 Whenever any code is pushed into the github jenkins job 1 will automatically 
 download the code with the git  hook triggers. 
 
-<img src="job1giturl">
+<img src="job1giturl.png">
 
 Token provided
-<img src="job1token">
+<img src="job1token.png">
 
 This code will be copied inside the container in the folder provided.
-<img src="copyjob1">
+<img src="copyjob1.png">
 
 
 # Step:3
 
 In the Jenkins Job 2 the code of file from the container will be transfered or copied to RHEL 8 Virtual Machine.
-<img src="job2copyfiles">
+<img src="job2copyfiles.png">
 
 
 # Step:4
@@ -96,11 +95,11 @@ Here the pod is launched on the top of Kubernetes which will monitor the pods an
 
 
 This  Jenkins Job will check the  deployed pod for errors. If there is any error in the deployment an email will be sent to the mentioned email account. 
-<img src="copyjob1">
+<img src="copyjob1.png">
 
 
 Before doing this we have to configure emails in the Jenkins configuration else email won't work.
-<img src="job4email">
+<img src="job4email.png">
 
 
 
