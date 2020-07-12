@@ -39,7 +39,7 @@ We have to install kubectl command in our redhat vm and then configure the minik
             2. client.key
             3. client.crt
             
-Configuration file of kuburnetes:
+Configuration file of kuburnetes which is stored in .kube folder:
 
 
 <img src="config33.png">
