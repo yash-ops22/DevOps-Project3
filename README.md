@@ -107,6 +107,9 @@ Here the pod is launched on the top of Kubernetes which will monitor the pods an
 
 
 
+<img src="job33.png">
+
+
 
 # Step:5
 
