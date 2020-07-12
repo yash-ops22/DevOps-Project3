@@ -40,7 +40,7 @@ We have to install kubectl command in our redhat vm and then configure the minik
             3. client.crt
             
 Configuration file:
-<img src="  ">
+<img src="config.png">
 
 
 # Step:1
@@ -48,6 +48,7 @@ Creating a container image using Dockerfile which has the jenkins installed.
 we installed  required commands for the centos. We have to provde root powers to jenkins to operate  commands. Jenkins default port 
 is 8080.
 
+<img src="dockerfile1.png">
 
 After creating the image we have to build the image from the dockerfile.
 COMMAND: 
@@ -66,12 +67,21 @@ localhost:8080
 
 Creating first Jenkins job which will download the code from the Github.
 Whenever any code is pushed into the github jenkins job 1 will automatically 
-download the code with the git  hook triggers. This code will be copied inside the container in the folder provided.
+download the code with the git  hook triggers. 
+
+<img src="job1giturl">
+
+Token provided
+<img src="job1token">
+
+This code will be copied inside the container in the folder provided.
+<img src="copyjob1">
 
 
 # Step:3
 
 In the Jenkins Job 2 the code of file from the container will be transfered or copied to RHEL 8 Virtual Machine.
+<img src="job2copyfiles">
 
 
 # Step:4
@@ -85,7 +95,12 @@ Here the pod is launched on the top of Kubernetes which will monitor the pods an
 # Step:5
 
 
-This  Jenkins Job will check the  deployed pod for errors. If there is any error in the deployment an email will be sent to the mentioned email account. Before doing this we have to configure emails in the Jenkins configuration else email won't work.
+This  Jenkins Job will check the  deployed pod for errors. If there is any error in the deployment an email will be sent to the mentioned email account. 
+<img src="copyjob1">
+
+
+Before doing this we have to configure emails in the Jenkins configuration else email won't work.
+<img src="job4email">
 
 
 
