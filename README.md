@@ -1,4 +1,4 @@
-# devtask3
+
 # Task 3: DevOps Assembly Lines 
 
 1. Create container image that’s has Jenkins installed using
@@ -24,7 +24,15 @@
     messages and redeploy the application after code is being edited by
     the developer.
     
+# Technology used:
+ 
+        1.Docker
+        2.Jenkins
+        3.Kubernetes
+ 
+ 
 # Requirement:
+
 We have to install kubectl command in our redhat vm and then configure the minikube in it. For this we have to tranfer three files in redhat and configure them with the config file.
      
             1. ca.crt
@@ -37,7 +45,7 @@ Configuration file:
 
 # Step:1
 Creating a container image using Dockerfile which has the jenkins installed.
-we installed certiain required coomands for the centos. Jenkins default port 
+we installed  required commands for the centos. We have to provde root powers to jenkins to operate  commands. Jenkins default port 
 is 8080.
 
 
@@ -69,40 +77,19 @@ In the Jenkins Job 2 the code of file from the container will be transfered or c
 # Step:4
 
 Creating a third Jenkins job which will check the type of code and launch the same container pod. It will check the type of file or language interpreter with the extension of the file. After checking the code it will deploy the pods of the same lnguage interpreter.
+Here the pod is launched on the top of Kubernetes which will monitor the pods and will again launch the pods if it fails or crashes.
 
 
 
 
+# Step:5
+
+
+This  Jenkins Job will check the  deployed pod for errors. If there is any error in the deployment an email will be sent to the mentioned email account. Before doing this we have to configure emails in the Jenkins configuration else email won't work.
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+So, we are at the end of the task.
+Thank You for Reading it!!
 
